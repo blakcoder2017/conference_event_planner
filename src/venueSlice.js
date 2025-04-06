@@ -5,35 +5,37 @@ export const venueSlice = createSlice({
   name: "venue",
   initialState: [
     {
-      img: "",
-      name: "Conference Room (Capacity:15)",
-      cost: 3500,
+      img: "https://pixabay.com/images/download/business-20031_640.jpg",
+      name: "Projectors",
+      cost: 200,
       quantity: 0,
-    },
-    {
-      img: "",
-      name: "Auditorium Hall (Capacity:200)",
-      cost: 5500,
+  },
+  {
+      img: "https://pixabay.com/images/download/speakers-4109274_640.jpg",
+      name: "Speaker",
+      cost: 35,
       quantity: 0,
-    },
-    {
-      img: "",
-      name: "Presentation Room (Capacity:50)",
-      cost: 700,
+  },
+  {
+      img: "https://pixabay.com/images/download/public-speaking-3926344_640.jpg",
+      name: "Microphones",
+      cost: 45,
       quantity: 0,
-    },
-    {
-      img: "",
-      name: "Large Meeting Room (Capacity:10)",
-      cost: 900,
+  },
+  {
+      img: "https://pixabay.com/images/download/whiteboard-2903269_640.png",
+      name: "Whiteboards",
+      cost: 80,
       quantity: 0,
-    },
-    {
-      img: "",
-      name: "Small Meeting Room (Capacity:5)",
-      cost: 1100,
+  },
+
+  {
+      img: "https://pixabay.com/images/download/signpost-235079_640.jpg",
+      name: "Signage",
+      cost: 80,
       quantity: 0,
-    },
+  },
+
   
   ],
   reducers: {
@@ -52,6 +54,7 @@ export const venueSlice = createSlice({
         state[index].quantity--;
       }
     },
+
   },
 });
 
